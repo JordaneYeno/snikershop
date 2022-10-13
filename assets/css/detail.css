@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@1&display=swap');
+
+*{box-sizing: border-box;margin: 0;padding: 0;font-family: 'Merriweather Sans', sans-serif;}
+
+.global {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+.global .item {
+    border: none;
+    display: flex;
+    width: 100%;
+}
+
+.global .complet {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    text-align: left;
+}
+
+.global .complet h4{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.global .complet h5{
+    font-size: 4rem;
+}
+
+.global .complet .size{
+    margin-top: 1.4rem;
+    font-size: 2.2rem;
+}
+
+.global .complet p{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.global .complet .price{
+    margin: 16px 0;
+    font-size: 1.9rem;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(31, 223, 31);
+}
+
+.global .complet .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container-panier .quantity {
+    background-color: beige;
+    margin-bottom: 1rem;
+}
+
+.flex .btn{
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(31, 223, 31);
+    padding: 2px 0;
+}
+
+.flex .continu{
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 200px;
+    margin-left: 20px;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(17, 19, 17);
+    padding: 2px 0;
+}
+
+.global .box .cadre {
+    width: auto ;
+    height: 450px ;
+}
+
+.global .box a img {
+    width: 100% ;
+    height: 100% ;
+}
+
+.qty-minus,
+.qty-plus {
+    cursor: pointer;
+}
+
+.container-panier {
+    position: absolute;
+    bottom: 15%;
+    right: 20%;
+}

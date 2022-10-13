@@ -1,0 +1,56 @@
+<?php require_once '../public/write.php'; ?>
+
+<?php partial('../public/','header', ['title' => 'Accueil citysport']) ?>
+
+    <form class="search-form" id="form">
+        <input type="text" class="search-box" id="search" placeholder="Rechercher une chaussures">
+        <a href="panier.php">
+            <button type="submit" class="search-btn">
+                <img src="../assets/img/loupe.svg">
+            </button>
+        </a>
+    </form>
+
+
+    <div class="slider-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="slider-container">
+                        <div class="swiper-container image-slider">
+                            <div class="swiper-wrapper" id="slider-shoes">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="selection flex">
+        <select name="" id="taille" class="pointure">
+            <option value="">---Choisir la pointure---</option>
+        </select>
+        <select name="" id="marque" class="marque">
+            <option value="">---Choisir la marque---</option>
+        </select>
+    </div>
+    
+
+    <div class="span13">
+        <div class="well well-small full"></div>
+        <h4>Sports </h4>
+        <div class="blocker">
+            <div class="cards-items" id="result"></div>
+            <div class="cards-items" id="resultSearch"></div>
+            <div class="cards-items" id="resultSearchAll"></div>
+        </div>
+
+    </div>
+    
+
+<?php partial('../public/','footer', ['title' => 'Accueil citysport']) ?>
